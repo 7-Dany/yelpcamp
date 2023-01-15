@@ -1,0 +1,48 @@
+{
+  "name": "yelpcamp-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "npm run build && node dist/index",
+    "jasmine": "jasmine",
+    "format": "prettier --write src/**/*.{ts,tsx,js,jsx}",
+    "lint": "eslint . --ext .ts --fix",
+    "test": "set ENV=test&& tsc && jasmine"
+  },
+  "keywords": [],
+  "author": "Ali Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "@types/supertest": "^2.0.12",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "mongoose": "^6.8.3",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.15",
+    "@types/jasmine": "^4.3.1",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^27.0.1",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
